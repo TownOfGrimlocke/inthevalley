@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Valley, Oregon</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #fff;
+
+    background:
+        linear-gradient(rgba(5,20,35,.45), rgba(0,0,0,.75)),
+        url("background.jpg") center center/cover no-repeat fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.panel {
+    width: 100%;
+    max-width: 1300px;
+
+    background: rgba(15,15,15,.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,.08);
+
+    padding: 50px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.5),
+        0 0 30px rgba(255,255,255,.05);
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.25rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,.9);
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+
+    margin-bottom: 60px;
+}
+
+.logo-card {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 20px;
+
+    padding: 35px;
+
+    transition: all .25s ease;
+}
+
+.logo-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,.12);
+    box-shadow: 0 15px 40px rgba(0,0,0,.4);
+}
+
+.logo {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.links {
+    max-width: 900px;
+    margin: auto;
+}
+
+.links h2 {
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.link-grid a {
+    display: block;
+
+    padding: 18px;
+    text-decoration: none;
+    color: white;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0,120,255,.35),
+        rgba(0,180,255,.18)
+    );
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    transition: all .25s ease;
+}
+
+.link-grid a:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(
+        135deg,
+        rgba(0,120,255,.55),
+        rgba(0,180,255,.28)
+    );
+    box-shadow: 0 8px 25px rgba(0,0,0,.35);
+}
+
+.footer {
+    margin-top: 40px;
+    color: rgba(255,255,255,.65);
+    font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+
+    .panel {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        width: 220px;
+    }
+
+    .logo-section {
+        gap: 40px;
+    }
+
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.events-section {
+    margin: 60px 0;
+}
+
+.events-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.calendar-container iframe {
+    border-radius: 12px;
+    background: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="panel">
+
+<h1>White Valley, Oregon</h1>
+
+<div class="subtitle">
+    Welcome to White Valley, Oregon. Click a link below to visit  our community. For applications, visit the links below.
+</div>
+
+<div class="logo-section">
+
+    <a href="https://townofgrimlocke.com/" target="_blank" class="logo-card">
+        <img src="https://cypresspointesl.com/wp-content/uploads/2026/06/Grimlocke.png" alt="Town of Grimlocke" class="logo">
+    </a>
+
+
+</div>
+
+<div class="links">
+    <h2>Applications & Services</h2>
+
+    <div class="link-grid">
+
+        <a href="https://townofgrimlocke.com/careers/wvso">
+            Sheriff's Office Application
+        </a>
+
+        <a href="https://townofgrimlocke.com/careers/wvmc">
+            Medical Center Application
+        </a>
+
+        <a href="https://townofgrimlocke.com/careers/wvfr">
+            Fire Rescue Application
+        </a>
+
+        <a href="https://townofgrimlocke.com/departments/wvps/white-valley-public-schools">
+            White Valley School
+        </a>
+
+        <a href="https://townofgrimlocke.com/dmv/license-plate">
+            DMV — Get Your License Plate
+        </a>
+
+        <a href="https://townofgrimlocke.com/dmv/drivers-license">
+            DMV — Get Your Driver's License
+        </a>
+
+    </div>
+</div>
+
+<div class="events-section">
+
+    <h2>Upcoming Events</h2>
+
+    <div class="calendar-container">
+        <!-- Replace the src with your Google Calendar embed URL -->
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&showTabs=0&showCalendars=0&src=ZWU4OWRiYzJiNDJhZTFkYzEwZTgzNWQzMzQxYjA2N2M0YjEwMmZkMjgxMTY4OGQzNTFkYzNmY2FjZDVhMWFmNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23e67c73"
+            style="border:0"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no">
+        </iframe>
+    </div>
+
+</div>
+
+<div class="footer">
+    White Valley Regional Partnership • Second Life Roleplay •  Made With ♥ in Cypress Pointe
+</div>
+
+
+</div>
+
+</body>
+</html>
